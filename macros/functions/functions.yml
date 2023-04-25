@@ -1,0 +1,8 @@
+---
+version: 2
+macros:
+- name: "qa_boolean_macro"
+  arguments:
+  - name: "input_column"
+    type: "unknown"
+  macroType: "expression"
