@@ -21,6 +21,66 @@ subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_1:
     name: env_uitesting_main_model_databricks_1
+    schema:
+      providerType: Databricks
+      fields:
+      - name: p_int
+        dataType:
+          type: Integer
+      - name: p_string
+        dataType:
+          type: String
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Double
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: c_base_dependency_macro
+        dataType:
+          type: String
+      - name: c_current_project_macro
+        dataType:
+          type: Boolean
+      - name: c_dbt_date
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -285,6 +345,21 @@ sqlMacros:
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_orders:
     name: raw_orders
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: user_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -293,6 +368,21 @@ sqlSeeds:
     modifiedAt: '2023-04-15 08:39:29'
   .prophecy/metadata/sqlseeds/raw_payments:
     name: raw_payments
+    schema:
+      providerType: Databricks
+      fields:
+      - name: id
+        dataType:
+          type: Integer
+      - name: order_id
+        dataType:
+          type: Integer
+      - name: payment_method
+        dataType:
+          type: String
+      - name: amount
+        dataType:
+          type: Integer
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -310,11 +400,107 @@ sqlSources:
     modifiedAt: '2023-04-15 08:50:11'
     tables:
     - name: all_type_non_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-15 08:50:11'
       modifiedAt: '2023-04-15 08:50:11'
     - name: all_type_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+        - name: p_int
+          dataType:
+            type: Integer
+        - name: p_string
+          dataType:
+            type: String
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-15 08:50:11'
