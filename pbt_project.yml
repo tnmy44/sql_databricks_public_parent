@@ -91,6 +91,19 @@ sqlModels:
       datasets: []
     createdAt: '2023-04-15 08:40:36'
     modifiedAt: '2023-04-15 08:40:36'
+  .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2:
+    name: env_uitesting_main_model_databricks_2
+    schema: null
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/env_uitesting_main_model_databricks_2.sql
+    - .prophecy/ide/models/env_uitesting_main_model_databricks_2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-09 07:25:57'
+    modifiedAt: '2023-06-09 07:25:57'
 sqlMacros:
   .prophecy/metadata/sqlmacros/default__language_specific_deduplicate:
     name: default__language_specific_deduplicate

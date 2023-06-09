@@ -1,0 +1,46 @@
+{
+  "id" : "env_uitesting_main_model_databricks_2",
+  "metainfo" : {
+    "label" : "env_uitesting_main_model_databricks_2",
+    "autoLayout" : false,
+    "staleState" : "none",
+    "sourceSuggestions" : {
+      "sources" : [ ]
+    }
+  },
+  "processes" : {
+    "env_uitesting_main_model_databricks_2##rvH8T0U3" : {
+      "id" : "env_uitesting_main_model_databricks_2##rvH8T0U3",
+      "component" : "TargetModel",
+      "metadata" : {
+        "label" : "env_uitesting_main_model_databricks_2",
+        "x" : 120,
+        "y" : 120,
+        "phase" : 0
+      },
+      "properties" : {
+        "customQueryDisabled" : true,
+        "customQuery" : false,
+        "incrementalEditorDisabled" : true,
+        "query" : "",
+        "incrementalKey" : false,
+        "incremental" : {
+          "expression" : "true"
+        }
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "gqibvrDF",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "KHtG6n1k",
+          "slug" : "out"
+        } ],
+        "isCustomOutputSchema" : false
+      }
+    }
+  },
+  "connections" : [ ],
+  "component" : "Model"
+}
