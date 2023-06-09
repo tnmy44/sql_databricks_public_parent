@@ -93,7 +93,66 @@ sqlModels:
     modifiedAt: '2023-04-15 08:40:36'
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2:
     name: env_uitesting_main_model_databricks_2
-    schema: null
+    schema:
+      providerType: Databricks
+      fields:
+      - name: p_int
+        dataType:
+          type: Integer
+      - name: p_string
+        dataType:
+          type: String
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Double
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: c_base_dependency_macro
+        dataType:
+          type: String
+      - name: c_current_project_macro
+        dataType:
+          type: Boolean
+      - name: c_dbt_date
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -104,6 +163,78 @@ sqlModels:
       datasets: []
     createdAt: '2023-06-09 07:25:57'
     modifiedAt: '2023-06-09 07:25:57'
+  .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_3:
+    name: env_uitesting_main_model_databricks_3
+    schema:
+      providerType: Databricks
+      fields:
+      - name: p_int
+        dataType:
+          type: Integer
+      - name: p_string
+        dataType:
+          type: String
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Double
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: c_base_dependency_macro
+        dataType:
+          type: String
+      - name: c_current_project_macro
+        dataType:
+          type: Boolean
+      - name: c_dbt_date
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/env_uitesting_main_model_databricks_3.sql
+    - .prophecy/ide/models/env_uitesting_main_model_databricks_3.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-09 07:30:04'
+    modifiedAt: '2023-06-09 07:30:04'
 sqlMacros:
   .prophecy/metadata/sqlmacros/default__language_specific_deduplicate:
     name: default__language_specific_deduplicate
