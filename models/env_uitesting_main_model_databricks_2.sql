@@ -50,4 +50,3 @@ Reformat_1 AS (
 SELECT *
 
 FROM Reformat_1
-

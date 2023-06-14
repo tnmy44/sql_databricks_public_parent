@@ -101,3 +101,135 @@ sources:
     - name: "p_string"
       dataType:
         type: "String"
+- name: "spark_catalog.qa_database"
+  database: "spark_catalog"
+  schema: "qa_database"
+  config:
+    enabled: true
+  tables:
+  - name: "delta_all_type_table"
+    columns:
+    - name: "c_tinyint"
+      dataType:
+        type: "TinyInt"
+    - name: "c_smallint"
+      dataType:
+        type: "SmallInt"
+    - name: "c_int"
+      dataType:
+        type: "Integer"
+    - name: "c_bigint"
+      dataType:
+        type: "Bigint"
+    - name: "c_float"
+      dataType:
+        type: "Float"
+    - name: "c_double"
+      dataType:
+        type: "Double"
+    - name: "c_string"
+      dataType:
+        type: "String"
+    - name: "c_boolean"
+      dataType:
+        type: "Boolean"
+    - name: "c_date"
+      dataType:
+        type: "Date"
+    - name: "c_timestamp"
+      dataType:
+        type: "Timestamp"
+    - name: "c_binary"
+      dataType:
+        type: "Binary"
+    - name: "c_decimal"
+      dataType:
+        type: "Decimal"
+    - name: "c_array"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "String"
+    - name: "c_array_struct"
+      dataType:
+        type: "Array"
+        dataType:
+          type: "Struct"
+          fields:
+          - name: "city"
+            dataType:
+              type: "String"
+          - name: "state"
+            dataType:
+              type: "String"
+          - name: "pin"
+            dataType:
+              type: "Bigint"
+          - name: "start_date"
+            dataType:
+              type: "Date"
+          - name: "is_available"
+            dataType:
+              type: "Boolean"
+          - name: "yearlyrates"
+            dataType:
+              type: "Array"
+              dataType:
+                type: "Integer"
+          - name: "roomsizes"
+            dataType:
+              type: "Struct"
+              fields:
+              - name: "r_name"
+                dataType:
+                  type: "String"
+              - name: "size"
+                dataType:
+                  type: "Integer"
+    - name: "c_map"
+      dataType:
+        type: "Map"
+        keyType:
+          type: "String"
+        valueType:
+          type: "Integer"
+    - name: "c_struct"
+      dataType:
+        type: "Struct"
+        fields:
+        - name: "city"
+          dataType:
+            type: "String"
+        - name: "state"
+          dataType:
+            type: "String"
+        - name: "pin"
+          dataType:
+            type: "Bigint"
+        - name: "start_date"
+          dataType:
+            type: "Date"
+        - name: "is_available"
+          dataType:
+            type: "Boolean"
+        - name: "yearlyrates"
+          dataType:
+            type: "Array"
+            dataType:
+              type: "Integer"
+        - name: "roomsizes"
+          dataType:
+            type: "Struct"
+            fields:
+            - name: "r_name"
+              dataType:
+                type: "String"
+            - name: "size"
+              dataType:
+                type: "Integer"
+    - name: "p_string"
+      dataType:
+        type: "String"
+    - name: "p_int"
+      dataType:
+        type: "Integer"

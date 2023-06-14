@@ -16,6 +16,8 @@ all_type_partitioned AS (
 
 Join_1 AS (
 
+  {#asd
+  asdasddasd#}
   SELECT 
     all_type_partitioned.p_int AS p_int,
     all_type_partitioned.p_string AS p_string,
@@ -41,9 +43,21 @@ Join_1 AS (
 
 Reformat_1 AS (
 
+  {#test comment line 1
+  test comment line 4
+  another comment
+  #}
   SELECT * 
   
   FROM Join_1 AS in0
+
+),
+
+Reformat_2 AS (
+
+  SELECT * 
+  
+  FROM Reformat_1 AS in0
 
 )
 

@@ -2,7 +2,7 @@
   "id" : "env_uitesting_main_model_databricks_2",
   "metainfo" : {
     "label" : "env_uitesting_main_model_databricks_2",
-    "autoLayout" : true,
+    "autoLayout" : false,
     "staleState" : "none",
     "sourceSuggestions" : {
       "sources" : [ ]
@@ -19,6 +19,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_partitioned",
+        "x" : 120,
+        "y" : 320,
         "phase" : 0
       },
       "properties" : {
@@ -125,6 +127,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1",
+        "x" : 320,
+        "y" : 220,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column", "SQL_DatabricksParentProjectMain.qa_boolean_macro" ]
       },
@@ -490,6 +494,8 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "env_uitesting_main_model_databricks_2",
+        "x" : 720,
+        "y" : 220,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -716,6 +722,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_1",
+        "x" : 520,
+        "y" : 220,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -936,6 +944,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
+        "x" : 120,
+        "y" : 120,
         "phase" : 0
       },
       "properties" : {
