@@ -8,8 +8,13 @@
       "sources" : [ ]
     },
     "graphConfig" : {
+      "modelConfig" : {
+        "materialized" : "table"
+      },
       "userDefinedConfig" : {
-        "vars" : { }
+        "vars" : {
+          "model_1_int" : "10"
+        }
       }
     }
   },
@@ -29,7 +34,7 @@
           "path" : "out",
           "id" : "out",
           "language" : "sql",
-          "content" : "SELECT id AS c_id\n\nFROM my_table1\n\nUNION\n\nSELECT c_tinyint AS c_id\n\nFROM my_table2\n\nUNION ALL\n\nSELECT c_tinyint AS c_id\n\nFROM my_table_3\n\n\n\n\n"
+          "content" : "SELECT id AS c_id\n\nFROM my_table1\n\nUNION\n\nSELECT c_tinyint AS c_id\n\nFROM my_table2\n\nUNION\n\nSELECT c_tinyint AS c_id\n\nFROM my_table_3\n\n\n\n\n"
         } ]
       },
       "ports" : {
@@ -425,8 +430,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "my_table2",
-        "x" : 120,
-        "y" : 320,
+        "x" : -140,
+        "y" : 360,
         "phase" : 0
       },
       "properties" : {
@@ -533,8 +538,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "my_table_3",
-        "x" : 120,
-        "y" : 520,
+        "x" : 60,
+        "y" : 480,
         "phase" : 0
       },
       "properties" : {
@@ -767,16 +772,16 @@
         "x" : 540,
         "y" : 320,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ "is_incremental" ]
       },
       "properties" : {
         "customQueryDisabled" : true,
         "customQuery" : false,
-        "incrementalEditorDisabled" : true,
-        "query" : "SELECT * \n\nFROM final_table\n",
-        "incrementalKey" : false,
+        "incrementalEditorDisabled" : false,
+        "query" : "SELECT * \n\nFROM final_table\n\n{% if is_incremental() %}\n  WHERE \n    c_id > (SELECT MAX(c_id) FROM {{ this }})\n{% endif %}",
+        "incrementalKey" : true,
         "incremental" : {
-          "expression" : "true"
+          "expression" : "c_id"
         }
       },
       "ports" : {

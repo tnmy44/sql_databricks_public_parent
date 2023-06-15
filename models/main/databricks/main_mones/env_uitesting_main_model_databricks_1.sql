@@ -47,7 +47,7 @@ Reformat_1 AS (
   test comment line 4
   another comment
   #}
-  SELECT * 
+  SELECT p_int AS p_int
   
   FROM Join_1 AS in0
 

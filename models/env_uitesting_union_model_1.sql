@@ -1,3 +1,11 @@
+{{
+  config({    
+    "materialized": "table"
+  })
+}}
+
+{% set model_1_int = 10 %}
+
 WITH my_table1 AS (
 
   SELECT * 
@@ -34,7 +42,7 @@ final_table AS (
   
   FROM my_table2
   
-  UNION ALL
+  UNION
   
   SELECT c_tinyint AS c_id
   
@@ -45,3 +53,12 @@ final_table AS (
 SELECT *
 
 FROM final_table
+
+{% if is_incremental() %}
+  
+  WHERE c_id > (
+    SELECT MAX(c_id)
+    
+    FROM {{this}}
+   )
+{% endif %}
