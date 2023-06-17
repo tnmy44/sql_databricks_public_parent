@@ -6,7 +6,15 @@
 
 {% set model_1_int = 10 %}
 
-WITH my_table1 AS (
+WITH my_table_3 AS (
+
+  SELECT * 
+  
+  FROM {{ source('alias_spark_catalog_qa_database', 'delta_all_type_table') }}
+
+),
+
+my_table1 AS (
 
   SELECT * 
   
@@ -19,14 +27,6 @@ my_table2 AS (
   SELECT * 
   
   FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
-
-),
-
-my_table_3 AS (
-
-  SELECT * 
-  
-  FROM {{ source('spark_catalog.qa_database', 'delta_all_type_table') }}
 
 ),
 

@@ -543,129 +543,14 @@ sqlSeeds:
     createdAt: '2023-04-15 08:39:49'
     modifiedAt: '2023-04-15 08:39:49'
 sqlSources:
-  .prophecy/metadata/sqlsources/alias_spark_catalog_qa_db_warehouse:
-    name: alias_spark_catalog_qa_db_warehouse
+  .prophecy/metadata/sqlsources/alias_spark_catalog_qa_database:
+    name: alias_spark_catalog_qa_database
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
     - prophecy-sources/sources.yml
-    createdAt: '2023-04-15 08:50:11'
-    modifiedAt: '2023-04-15 08:50:11'
-    tables:
-    - name: all_type_non_partitioned
-      schema:
-        providerType: databricks
-        fields:
-        - name: c_tinyint
-          dataType:
-            type: TinyInt
-        - name: c_smallint
-          dataType:
-            type: SmallInt
-        - name: c_int
-          dataType:
-            type: Integer
-        - name: c_bigint
-          dataType:
-            type: Bigint
-        - name: c_float
-          dataType:
-            type: Float
-        - name: c_double
-          dataType:
-            type: Double
-        - name: c_string
-          dataType:
-            type: String
-        - name: c_boolean
-          dataType:
-            type: Boolean
-        - name: c_array
-          dataType:
-            type: Array
-            dataType:
-              type: String
-        - name: c_struct
-          dataType:
-            type: Struct
-            fields:
-            - name: city
-              dataType:
-                type: String
-            - name: state
-              dataType:
-                type: String
-            - name: pin
-              dataType:
-                type: Bigint
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      createdAt: '2023-04-15 08:50:11'
-      modifiedAt: '2023-04-15 08:50:11'
-    - name: all_type_partitioned
-      schema:
-        providerType: databricks
-        fields:
-        - name: c_tinyint
-          dataType:
-            type: TinyInt
-        - name: c_smallint
-          dataType:
-            type: SmallInt
-        - name: c_int
-          dataType:
-            type: Integer
-        - name: c_bigint
-          dataType:
-            type: Bigint
-        - name: c_float
-          dataType:
-            type: Float
-        - name: c_double
-          dataType:
-            type: Double
-        - name: c_string
-          dataType:
-            type: String
-        - name: c_boolean
-          dataType:
-            type: Boolean
-        - name: c_array
-          dataType:
-            type: Array
-            dataType:
-              type: String
-        - name: c_struct
-          dataType:
-            type: Struct
-            fields:
-            - name: city
-              dataType:
-                type: String
-            - name: state
-              dataType:
-                type: String
-            - name: pin
-              dataType:
-                type: Bigint
-        - name: p_int
-          dataType:
-            type: Integer
-        - name: p_string
-          dataType:
-            type: String
-      description: null
-      author: abhisheks+e2etests@prophecy.io
-      createdAt: '2023-04-15 08:50:11'
-      modifiedAt: '2023-04-15 08:50:11'
-  .prophecy/metadata/sqlsources/spark_catalog_qa_database:
-    name: spark_catalog.qa_database
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - prophecy-sources/sources.yml
-    createdAt: '2023-06-09 08:55:04'
-    modifiedAt: '2023-06-09 08:55:04'
+    createdAt: '2023-06-17 17:43:09'
+    modifiedAt: '2023-06-17 17:43:09'
     tables:
     - name: delta_all_type_table
       schema:
@@ -797,8 +682,123 @@ sqlSources:
             type: Integer
       description: null
       author: abhisheks+e2etests@prophecy.io
-      createdAt: '2023-06-09 08:55:04'
-      modifiedAt: '2023-06-09 08:55:04'
+      createdAt: '2023-06-17 17:43:09'
+      modifiedAt: '2023-06-17 17:43:09'
+  .prophecy/metadata/sqlsources/alias_spark_catalog_qa_db_warehouse:
+    name: alias_spark_catalog_qa_db_warehouse
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2023-04-15 08:50:11'
+    modifiedAt: '2023-04-15 08:50:11'
+    tables:
+    - name: all_type_non_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-15 08:50:11'
+      modifiedAt: '2023-04-15 08:50:11'
+    - name: all_type_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+        - name: p_int
+          dataType:
+            type: Integer
+        - name: p_string
+          dataType:
+            type: String
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2023-04-15 08:50:11'
+      modifiedAt: '2023-04-15 08:50:11'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline

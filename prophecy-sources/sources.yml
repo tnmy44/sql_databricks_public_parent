@@ -101,7 +101,7 @@ sources:
     - name: "p_string"
       dataType:
         type: "String"
-- name: "spark_catalog.qa_database"
+- name: "alias_spark_catalog_qa_database"
   database: "spark_catalog"
   schema: "qa_database"
   config:
