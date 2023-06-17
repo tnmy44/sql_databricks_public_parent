@@ -30,10 +30,7 @@ Join_1 AS (
     all_type_non_partitioned.c_boolean AS c_boolean,
     all_type_non_partitioned.c_array AS c_array,
     all_type_non_partitioned.c_double AS c_double,
-    all_type_non_partitioned.c_struct AS c_struct,
-    {{ SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column('all_type_non_partitioned.c_string') }} AS c_base_dependency_macro,
-    {{ SQL_DatabricksParentProjectMain.qa_boolean_macro('all_type_non_partitioned.c_string') }} AS c_current_project_macro,
-    concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_date
+    all_type_non_partitioned.c_struct AS c_struct
   
   FROM all_type_non_partitioned
   INNER JOIN all_type_partitioned
@@ -41,15 +38,19 @@ Join_1 AS (
 
 ),
 
-Reformat_1 AS (
+Reformat_3 AS (
 
-  {#test comment line 1
-  test comment line 4
-  another comment
-  #}
-  SELECT p_int AS p_int
+  SELECT * 
   
   FROM Join_1 AS in0
+
+),
+
+Reformat_4 AS (
+
+  SELECT * 
+  
+  FROM Reformat_3 AS in0
 
 ),
 
@@ -57,10 +58,10 @@ Reformat_2 AS (
 
   SELECT * 
   
-  FROM Reformat_1 AS in0
+  FROM Reformat_4 AS in0
 
 )
 
 SELECT *
 
-FROM Reformat_1
+FROM Reformat_4
