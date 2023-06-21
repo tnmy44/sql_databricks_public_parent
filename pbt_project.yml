@@ -12,7 +12,6 @@ jobs: {}
 functions:
   author: null
   createdAt: '2023-04-15 08:21:42'
-  modifiedAt: '2023-04-15 08:21:42'
   gems: {}
   udfs: {}
   udafs: {}
@@ -81,7 +80,97 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-04-15 08:40:36'
-    modifiedAt: '2023-04-15 08:40:36'
+  .prophecy/metadata/sqlmodels/env_uitesting_can_corrupt:
+    name: env_uitesting_can_corrupt
+    schema:
+      providerType: Databricks
+      fields:
+      - name: p_int
+        dataType:
+          type: Integer
+      - name: p_string
+        dataType:
+          type: String
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Double
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: c_base_dependency_macro
+        dataType:
+          type: String
+      - name: c_current_project_macro
+        dataType:
+          type: Boolean
+      - name: c_dbt_date
+        dataType:
+          type: String
+      - name: city
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/env_uitesting_can_corrupt.sql
+    - .prophecy/ide/models/env_uitesting_can_corrupt.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-20 09:19:31'
+  .prophecy/metadata/sqlmodels/env_uitesting_union_model_1:
+    name: env_uitesting_union_model_1
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_id
+        dataType:
+          type: Integer
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/env_uitesting_union_model_1.sql
+    - .prophecy/ide/models/env_uitesting_union_model_1.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2023-06-09 08:50:25'
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2:
     name: env_uitesting_main_model_databricks_2
     schema:
@@ -153,7 +242,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-06-09 07:25:57'
-    modifiedAt: '2023-06-09 07:25:57'
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_3:
     name: env_uitesting_main_model_databricks_3
     schema:
@@ -216,6 +304,9 @@ sqlModels:
       - name: c_dbt_date
         dataType:
           type: String
+      - name: city
+        dataType:
+          type: String
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -225,25 +316,6 @@ sqlModels:
       models: []
       datasets: []
     createdAt: '2023-06-09 07:30:04'
-    modifiedAt: '2023-06-09 07:30:04'
-  .prophecy/metadata/sqlmodels/env_uitesting_union_model_1:
-    name: env_uitesting_union_model_1
-    schema:
-      providerType: Databricks
-      fields:
-      - name: c_id
-        dataType:
-          type: Integer
-    description: null
-    author: abhisheks+e2etests@prophecy.io
-    files:
-    - models/env_uitesting_union_model_1.sql
-    - .prophecy/ide/models/env_uitesting_union_model_1.json
-    sqlDependencies:
-      models: []
-      datasets: []
-    createdAt: '2023-06-09 08:50:25'
-    modifiedAt: '2023-06-09 08:50:25'
 sqlMacros:
   .prophecy/metadata/sqlmacros/default__language_specific_deduplicate:
     name: default__language_specific_deduplicate
@@ -254,7 +326,6 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:20'
-    modifiedAt: '2023-04-15 08:37:20'
   .prophecy/metadata/sqlmacros/databricks__language_specific_concat:
     name: databricks__language_specific_concat
     macroType: expression
@@ -263,7 +334,6 @@ sqlMacros:
     files:
     - macros/functions/language_specific_concat.sql
     createdAt: '2023-04-15 08:36:14'
-    modifiedAt: '2023-04-15 08:36:14'
   .prophecy/metadata/sqlmacros/qa_concat_macro_column:
     name: qa_concat_macro_column
     macroType: expression
@@ -272,7 +342,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/qa_model_all_above_given_id:
     name: qa_model_all_above_given_id
     macroType: query
@@ -282,7 +351,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
   .prophecy/metadata/sqlmacros/round_function:
     name: round_function
     macroType: expression
@@ -291,7 +359,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/qa_concat_macro:
     name: qa_concat_macro
     macroType: expression
@@ -300,7 +367,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/qa_concat_macro_calling_complex_concat:
     name: qa_concat_macro_calling_complex_concat
     macroType: expression
@@ -309,7 +375,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:35:40'
-    modifiedAt: '2023-04-15 08:35:40'
   .prophecy/metadata/sqlmacros/qa_epl_data_macro:
     name: qa_epl_data_macro
     macroType: query
@@ -319,7 +384,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
   .prophecy/metadata/sqlmacros/language_specific_concat:
     name: language_specific_concat
     macroType: expression
@@ -329,7 +393,6 @@ sqlMacros:
     - macros/functions/language_specific_concat.sql
     - .prophecy/ide/macros/language_specific_concat.json
     createdAt: '2023-04-15 08:36:01'
-    modifiedAt: '2023-04-15 08:36:01'
   .prophecy/metadata/sqlmacros/qa_all_not_null:
     name: qa_all_not_null
     macroType: query
@@ -339,7 +402,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
   .prophecy/metadata/sqlmacros/default__language_specific_concat:
     name: default__language_specific_concat
     macroType: expression
@@ -348,7 +410,6 @@ sqlMacros:
     files:
     - macros/functions/language_specific_concat.sql
     createdAt: '2023-04-15 08:36:14'
-    modifiedAt: '2023-04-15 08:36:14'
   .prophecy/metadata/sqlmacros/qa_number_macro:
     name: qa_number_macro
     macroType: expression
@@ -358,7 +419,6 @@ sqlMacros:
     - macros/functions/qa_number_macro.sql
     - .prophecy/ide/macros/qa_number_macro.json
     createdAt: '2023-04-15 08:22:12'
-    modifiedAt: '2023-04-15 08:22:12'
   .prophecy/metadata/sqlmacros/snowflake__language_specific_concat:
     name: snowflake__language_specific_concat
     macroType: expression
@@ -367,7 +427,6 @@ sqlMacros:
     files:
     - macros/functions/language_specific_concat.sql
     createdAt: '2023-04-15 08:36:14'
-    modifiedAt: '2023-04-15 08:36:14'
   .prophecy/metadata/sqlmacros/language_specific_deduplicate:
     name: language_specific_deduplicate
     macroType: expression
@@ -377,7 +436,6 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate.sql
     - .prophecy/ide/macros/language_specific_deduplicate.json
     createdAt: '2023-04-15 08:37:06'
-    modifiedAt: '2023-04-15 08:37:06'
   .prophecy/metadata/sqlmacros/snowflake__language_specific_deduplicate:
     name: snowflake__language_specific_deduplicate
     macroType: query
@@ -387,7 +445,6 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:20'
-    modifiedAt: '2023-04-15 08:37:20'
   .prophecy/metadata/sqlmacros/postgres__language_specific_deduplicate:
     name: postgres__language_specific_deduplicate
     macroType: query
@@ -397,7 +454,6 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:20'
-    modifiedAt: '2023-04-15 08:37:20'
   .prophecy/metadata/sqlmacros/qa_get_unique_count:
     name: qa_get_unique_count
     macroType: query
@@ -407,7 +463,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
   .prophecy/metadata/sqlmacros/qa_test_relationship:
     name: qa_test_relationship
     macroType: query
@@ -418,7 +473,6 @@ sqlMacros:
     - .prophecy/ide/macros/qa_test_relationship.json
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:30'
-    modifiedAt: '2023-04-15 08:37:30'
   .prophecy/metadata/sqlmacros/qa_complex_macro:
     name: qa_complex_macro
     macroType: query
@@ -428,7 +482,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
   .prophecy/metadata/sqlmacros/qa_boolean_macro:
     name: qa_boolean_macro
     macroType: expression
@@ -438,7 +491,6 @@ sqlMacros:
     - macros/functions/qa_number_macro.sql
     - macros/functions/functions.yml
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/redshift__language_specific_deduplicate:
     name: redshift__language_specific_deduplicate
     macroType: expression
@@ -447,7 +499,6 @@ sqlMacros:
     files:
     - macros/gems/language_specific_deduplicate.sql
     createdAt: '2023-04-15 08:37:20'
-    modifiedAt: '2023-04-15 08:37:20'
   .prophecy/metadata/sqlmacros/multi_macro_expressions:
     name: multi_macro_expressions
     macroType: expression
@@ -456,7 +507,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/bigquery__language_specific_concat:
     name: bigquery__language_specific_concat
     macroType: expression
@@ -465,7 +515,6 @@ sqlMacros:
     files:
     - macros/functions/language_specific_concat.sql
     createdAt: '2023-04-15 08:36:14'
-    modifiedAt: '2023-04-15 08:36:14'
   .prophecy/metadata/sqlmacros/bigquery__language_specific_deduplicate:
     name: bigquery__language_specific_deduplicate
     macroType: query
@@ -475,7 +524,6 @@ sqlMacros:
     - macros/gems/language_specific_deduplicate.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:20'
-    modifiedAt: '2023-04-15 08:37:20'
   .prophecy/metadata/sqlmacros/qa_macro_call_another_macro_column:
     name: qa_macro_call_another_macro_column
     macroType: expression
@@ -484,7 +532,6 @@ sqlMacros:
     files:
     - macros/functions/qa_number_macro.sql
     createdAt: '2023-04-15 08:22:23'
-    modifiedAt: '2023-04-15 08:22:23'
   .prophecy/metadata/sqlmacros/qa_all_null:
     name: qa_all_null
     macroType: query
@@ -494,7 +541,6 @@ sqlMacros:
     - macros/gems/qa_test_relationship.sql
     - macros/gems/gems.yml
     createdAt: '2023-04-15 08:37:46'
-    modifiedAt: '2023-04-15 08:37:46'
 sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_orders:
     name: raw_orders
@@ -518,7 +564,6 @@ sqlSeeds:
     files:
     - seeds/raw/raw_orders.csv
     createdAt: '2023-04-15 08:39:29'
-    modifiedAt: '2023-04-15 08:39:29'
   .prophecy/metadata/sqlseeds/raw_payments:
     name: raw_payments
     schema:
@@ -541,7 +586,6 @@ sqlSeeds:
     files:
     - seeds/raw/raw_payments.csv
     createdAt: '2023-04-15 08:39:49'
-    modifiedAt: '2023-04-15 08:39:49'
 sqlSources:
   .prophecy/metadata/sqlsources/alias_spark_catalog_qa_database:
     name: alias_spark_catalog_qa_database
@@ -550,7 +594,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-06-17 17:43:09'
-    modifiedAt: '2023-06-17 17:43:09'
     tables:
     - name: delta_all_type_table
       schema:
@@ -683,7 +726,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-06-17 17:43:09'
-      modifiedAt: '2023-06-17 17:43:09'
   .prophecy/metadata/sqlsources/alias_spark_catalog_qa_db_warehouse:
     name: alias_spark_catalog_qa_db_warehouse
     description: null
@@ -691,7 +733,6 @@ sqlSources:
     files:
     - prophecy-sources/sources.yml
     createdAt: '2023-04-15 08:50:11'
-    modifiedAt: '2023-04-15 08:50:11'
     tables:
     - name: all_type_non_partitioned
       schema:
@@ -742,7 +783,6 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-15 08:50:11'
-      modifiedAt: '2023-04-15 08:50:11'
     - name: all_type_partitioned
       schema:
         providerType: databricks
@@ -798,14 +838,12 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-15 08:50:11'
-      modifiedAt: '2023-04-15 08:50:11'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
   description: null
   author: abhisheks+e2etests@prophecy.io
   createdAt: '2023-04-15 08:21:42'
-  modifiedAt: '2023-04-15 08:21:42'
 dependencies: '[]'
 projectDependencies: {}
 pipelineConfigurations: {}

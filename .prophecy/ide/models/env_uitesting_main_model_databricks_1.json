@@ -20,8 +20,8 @@
       "metadata" : {
         "label" : "Reformat_2",
         "slug" : "Reformat_2",
-        "x" : 720,
-        "y" : 380,
+        "x" : 1020,
+        "y" : 360,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -212,10 +212,30 @@
       "component" : "TargetModel",
       "metadata" : {
         "label" : "env_uitesting_main_model_databricks_1",
-        "x" : 720,
-        "y" : 220,
+        "x" : 1060,
+        "y" : 200,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "c_int",
+            "operator" : ">=",
+            "rhs" : "2"
+          }, {
+            "type" : "simple",
+            "lhs" : "c_bigint",
+            "operator" : "<=",
+            "rhs" : "390"
+          } ],
+          "sort" : [ {
+            "column" : "p_int",
+            "order" : "asc"
+          }, {
+            "column" : "c_string",
+            "order" : "desc"
+          } ]
+        }
       },
       "properties" : {
         "customQueryDisabled" : true,
@@ -617,8 +637,8 @@
       "metadata" : {
         "label" : "Reformat_3",
         "slug" : "Reformat_3",
-        "x" : 440,
-        "y" : 20,
+        "x" : 540,
+        "y" : 200,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -813,7 +833,24 @@
         "y" : 220,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "asd\n  asdasddasd"
+        "comment" : "asd\n  asdasddasd",
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "p_int",
+            "operator" : ">=",
+            "rhs" : "2"
+          }, {
+            "type" : "simple",
+            "lhs" : "c_int",
+            "operator" : "<",
+            "rhs" : "15"
+          } ],
+          "sort" : [ {
+            "column" : "c_tinyint",
+            "order" : "asc"
+          } ]
+        }
       },
       "properties" : {
         "conditions" : [ {
@@ -1148,8 +1185,8 @@
       "metadata" : {
         "label" : "Reformat_4",
         "slug" : "Reformat_4",
-        "x" : 520,
-        "y" : 340,
+        "x" : 760,
+        "y" : 200,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
