@@ -430,8 +430,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
-        "x" : 120,
-        "y" : 120,
+        "x" : 20,
+        "y" : 60,
         "phase" : 0
       },
       "properties" : {
@@ -528,8 +528,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_partitioned",
-        "x" : 120,
-        "y" : 320,
+        "x" : -20,
+        "y" : 360,
         "phase" : 0
       },
       "properties" : {

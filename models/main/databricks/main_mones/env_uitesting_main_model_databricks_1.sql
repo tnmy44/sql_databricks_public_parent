@@ -34,7 +34,8 @@ Join_1 AS (
   
   FROM all_type_non_partitioned
   INNER JOIN all_type_partitioned
-     ON all_type_non_partitioned.c_tinyint = all_type_partitioned.c_tinyint and all_type_non_partitioned.c_smallint = all_type_partitioned.c_smallint
+     ON all_type_non_partitioned.c_tinyint = all_type_partitioned.c_tinyint
+    and all_type_non_partitioned.c_smallint = all_type_partitioned.c_smallint
 
 ),
 
