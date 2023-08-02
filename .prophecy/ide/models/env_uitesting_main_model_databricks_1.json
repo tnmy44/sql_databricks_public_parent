@@ -2561,7 +2561,7 @@
       "metadata" : {
         "label" : "Reformat_3",
         "slug" : "Reformat_3",
-        "x" : 500,
+        "x" : 520,
         "y" : 160,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -2763,8 +2763,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1",
-        "x" : 320,
-        "y" : 180,
+        "x" : 340,
+        "y" : 160,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "asd\n  asdasddasd",
