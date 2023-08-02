@@ -211,7 +211,7 @@ SQLStatement_1 AS (
           SELECT count(*)
           
           FROM Reformat_1
-         );
+         )
 
 ),
 

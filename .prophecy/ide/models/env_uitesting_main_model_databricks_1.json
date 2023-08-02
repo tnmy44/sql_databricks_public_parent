@@ -1506,7 +1506,7 @@
           "path" : "out",
           "id" : "out",
           "language" : "sql",
-          "content" : "select * from Reformat_4 where p_int!=(select count(*) from Reformat_1);"
+          "content" : "select * from Reformat_4 where p_int!=(select count(*) from Reformat_1)"
         } ]
       },
       "ports" : {
