@@ -119,11 +119,11 @@ my_table1 AS (
 
 ),
 
-my_table_3 AS (
+my_table2_1 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_database', 'delta_all_type_table') }}
+  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
 
 ),
 
@@ -143,7 +143,7 @@ final_table AS (
   
   SELECT c_tinyint AS c_id
   
-  FROM my_table_3
+  FROM my_table2_1
 
 ),
 
