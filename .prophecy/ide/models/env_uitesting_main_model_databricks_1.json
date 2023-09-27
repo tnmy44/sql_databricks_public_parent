@@ -558,7 +558,7 @@
       "component" : "Seed",
       "metadata" : {
         "label" : "my_table1",
-        "x" : -260,
+        "x" : -280,
         "y" : 320,
         "phase" : 0
       },
