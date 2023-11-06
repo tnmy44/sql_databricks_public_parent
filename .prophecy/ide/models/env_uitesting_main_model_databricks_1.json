@@ -953,8 +953,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
-        "x" : 20,
-        "y" : 60,
+        "x" : -100,
+        "y" : 40,
         "phase" : 0
       },
       "properties" : {
@@ -1695,7 +1695,7 @@
       "metadata" : {
         "label" : "final_table",
         "x" : 60,
-        "y" : 400,
+        "y" : 500,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1931,8 +1931,8 @@
       "metadata" : {
         "label" : "Join_1_1",
         "slug" : "Join_1_1",
-        "x" : -80,
-        "y" : -120,
+        "x" : -60,
+        "y" : -220,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column", "SQL_DatabricksParentProjectMain.qa_boolean_macro" ],
         "dataExplorerProps" : {
@@ -3213,8 +3213,8 @@
       "metadata" : {
         "label" : "Limit_1",
         "slug" : "Limit_1",
-        "x" : 220,
-        "y" : 380,
+        "x" : 280,
+        "y" : 460,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
