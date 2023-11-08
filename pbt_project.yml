@@ -1,6 +1,6 @@
 name: SQL_DatabricksParentProjectMain
 description: ''
-version: 3.2.4.1
+version: v3.2.4.0-2
 author: abhisheks+e2etests@prophecy.io
 language: sql
 buildSystem: ''
