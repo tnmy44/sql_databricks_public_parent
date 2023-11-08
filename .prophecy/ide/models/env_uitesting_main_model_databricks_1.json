@@ -1052,7 +1052,7 @@
       "component" : "Source",
       "metadata" : {
         "label" : "my_table2",
-        "x" : -180,
+        "x" : -340,
         "y" : 500,
         "phase" : 0
       },
@@ -1694,8 +1694,8 @@
       "component" : "SQLStatement",
       "metadata" : {
         "label" : "final_table",
-        "x" : 60,
-        "y" : 500,
+        "x" : 80,
+        "y" : 320,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3213,8 +3213,8 @@
       "metadata" : {
         "label" : "Limit_1",
         "slug" : "Limit_1",
-        "x" : 280,
-        "y" : 460,
+        "x" : 320,
+        "y" : 420,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
