@@ -560,8 +560,8 @@
       "component" : "Seed",
       "metadata" : {
         "label" : "my_table1",
-        "x" : -280,
-        "y" : 320,
+        "x" : -420,
+        "y" : 240,
         "phase" : 0
       },
       "properties" : {
@@ -844,8 +844,8 @@
       "metadata" : {
         "label" : "all_type_partitioned_1",
         "slug" : "all_type_partitioned_1",
-        "x" : -340,
-        "y" : -40,
+        "x" : -560,
+        "y" : 120,
         "phase" : 0
       },
       "properties" : {
@@ -1052,8 +1052,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "my_table2",
-        "x" : -340,
-        "y" : 500,
+        "x" : -520,
+        "y" : 660,
         "phase" : 0
       },
       "properties" : {
@@ -1162,8 +1162,8 @@
       "metadata" : {
         "label" : "my_table2_1",
         "slug" : "my_table2_1",
-        "x" : -120,
-        "y" : 640,
+        "x" : 160,
+        "y" : 660,
         "phase" : 0
       },
       "properties" : {
@@ -3260,8 +3260,8 @@
       "metadata" : {
         "label" : "all_type_non_partitioned_1",
         "slug" : "all_type_non_partitioned_1",
-        "x" : -280,
-        "y" : -260,
+        "x" : -560,
+        "y" : -380,
         "phase" : 0
       },
       "properties" : {
