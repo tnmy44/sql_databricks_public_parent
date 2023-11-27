@@ -844,8 +844,8 @@
       "metadata" : {
         "label" : "all_type_partitioned_1",
         "slug" : "all_type_partitioned_1",
-        "x" : -560,
-        "y" : 120,
+        "x" : -580,
+        "y" : -80,
         "phase" : 0
       },
       "properties" : {
