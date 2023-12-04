@@ -87,11 +87,11 @@ Reformat_1 AS (
 
 ),
 
-all_type_non_partitioned AS (
+my_table1 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_non_partitioned') }}
+  FROM {{ ref('raw_orders')}}
 
 ),
 
@@ -107,15 +107,7 @@ my_table2 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
-
-),
-
-my_table1 AS (
-
-  SELECT * 
-  
-  FROM {{ ref('raw_orders')}}
+  FROM all_type_partitioned
 
 ),
 
@@ -123,7 +115,7 @@ my_table2_1 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
+  FROM all_type_partitioned
 
 ),
 
@@ -154,6 +146,14 @@ Limit_1 AS (
   FROM final_table AS in0
   
   LIMIT 10
+
+),
+
+all_type_non_partitioned AS (
+
+  SELECT * 
+  
+  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_non_partitioned') }}
 
 ),
 
@@ -201,7 +201,7 @@ Reformat_4 AS (
 
 ),
 
-SQLStatement_1 AS (
+SQLStatement_2 AS (
 
   SELECT *
   
@@ -225,4 +225,4 @@ Reformat_2 AS (
 
 SELECT *
 
-FROM SQLStatement_1
+FROM SQLStatement_2
