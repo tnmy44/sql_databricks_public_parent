@@ -13,12 +13,14 @@ gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
   gems: {}
+  dependencies: null
 functions:
   author: null
   createdAt: '2023-04-15 08:21:42'
   udfs: {}
   udafs: {}
   expressions: {}
+  airflowFunctions: {}
 subgraphs: {}
 sqlModels:
   .prophecy/metadata/sqlmodels/env_uitesting_can_corrupt:
@@ -97,60 +99,7 @@ sqlModels:
     createdAt: '2023-06-20 09:19:31'
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_1:
     name: env_uitesting_main_model_databricks_1
-    schema:
-      providerType: Databricks
-      fields:
-      - name: p_int
-        dataType:
-          type: Integer
-      - name: p_string
-        dataType:
-          type: String
-      - name: c_string
-        dataType:
-          type: String
-      - name: c_int
-        dataType:
-          type: Integer
-      - name: c_bigint
-        dataType:
-          type: Double
-      - name: c_smallint
-        dataType:
-          type: SmallInt
-      - name: c_tinyint
-        dataType:
-          type: TinyInt
-      - name: c_float
-        dataType:
-          type: Float
-      - name: c_boolean
-        dataType:
-          type: Boolean
-      - name: c_array
-        dataType:
-          type: Array
-          dataType:
-            type: String
-      - name: c_double
-        dataType:
-          type: Float
-      - name: c_struct
-        dataType:
-          type: Struct
-          fields:
-          - name: city
-            dataType:
-              type: String
-          - name: state
-            dataType:
-              type: String
-          - name: pin
-            dataType:
-              type: Bigint
-      - name: c_id
-        dataType:
-          type: Integer
+    schema: null
     description: null
     author: abhisheks+e2etests@prophecy.io
     files:
@@ -559,4 +508,6 @@ sqlPipeline:
   createdAt: '2023-04-15 08:21:42'
 dependencies: '[]'
 projectDependencies: {}
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
 pipelineConfigurations: {}
