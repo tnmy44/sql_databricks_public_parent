@@ -437,7 +437,7 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
-        "x" : 760,
+        "x" : 600,
         "y" : 120,
         "phase" : 0
       },
@@ -1024,8 +1024,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned_1",
-        "x" : 120,
-        "y" : 200,
+        "x" : 40,
+        "y" : 240,
         "phase" : 0
       },
       "properties" : {
@@ -2697,8 +2697,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1",
-        "x" : 960,
-        "y" : 380,
+        "x" : 1000,
+        "y" : 540,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "asd\n  asdasddasd"
@@ -2784,7 +2784,7 @@
           "alias" : "c_id"
         } ],
         "activeTab" : "conditions",
-        "columnsSelector" : [ "grLpJ8ye##c_tinyint", "XAYU4Rhe##c_tinyint", "grLpJ8ye##c_smallint", "XAYU4Rhe##c_smallint", "XAYU4Rhe##c_int", "XAYU4Rhe##p_int", "XAYU4Rhe##p_string", "grLpJ8ye##c_string", "grLpJ8ye##c_int", "grLpJ8ye##c_bigint", "grLpJ8ye##c_smallint", "grLpJ8ye##c_tinyint", "grLpJ8ye##c_float", "grLpJ8ye##c_boolean", "grLpJ8ye##c_array", "grLpJ8ye##c_double", "grLpJ8ye##c_struct" ],
+        "columnsSelector" : [ "grLpJ8ye##c_tinyint", "XAYU4Rhe##c_tinyint", "grLpJ8ye##c_smallint", "XAYU4Rhe##c_smallint", "XAYU4Rhe##c_int", "sZxnG52d##c_id", "XAYU4Rhe##p_int", "XAYU4Rhe##p_string", "grLpJ8ye##c_string", "grLpJ8ye##c_int", "grLpJ8ye##c_bigint", "grLpJ8ye##c_smallint", "grLpJ8ye##c_tinyint", "grLpJ8ye##c_float", "grLpJ8ye##c_boolean", "grLpJ8ye##c_array", "grLpJ8ye##c_double", "grLpJ8ye##c_struct", "sZxnG52d##c_id" ],
         "headAlias" : "all_type_non_partitioned"
       },
       "ports" : {
