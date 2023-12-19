@@ -437,7 +437,7 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
-        "x" : 600,
+        "x" : 460,
         "y" : 120,
         "phase" : 0
       },
@@ -536,8 +536,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_3",
-        "x" : 1180,
-        "y" : 380,
+        "x" : 1220,
+        "y" : 500,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -1126,7 +1126,11 @@
         "x" : 1820,
         "y" : 380,
         "phase" : 0,
-        "macroDependencies" : [ ]
+        "macroDependencies" : [ ],
+        "dataExplorerProps" : {
+          "filter" : [ ],
+          "sort" : [ ]
+        }
       },
       "properties" : {
         "customQueryDisabled" : true,
@@ -1442,8 +1446,8 @@
       "metadata" : {
         "label" : "SQLStatement_2",
         "slug" : "SQLStatement_2",
-        "x" : 1600,
-        "y" : 140,
+        "x" : 1580,
+        "y" : 40,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -2099,7 +2103,7 @@
       "metadata" : {
         "label" : "Reformat_4",
         "x" : 1400,
-        "y" : 380,
+        "y" : 480,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -2698,7 +2702,7 @@
       "metadata" : {
         "label" : "Join_1",
         "x" : 1000,
-        "y" : 540,
+        "y" : 460,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "asd\n  asdasddasd"
