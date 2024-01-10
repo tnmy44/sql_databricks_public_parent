@@ -100,7 +100,7 @@ all_type_non_partitioned_1 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_non_partitioned') }}
+  FROM all_type_non_partitioned
 
 ),
 
@@ -108,7 +108,7 @@ all_type_partitioned_1 AS (
 
   SELECT * 
   
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
+  FROM all_type_partitioned
 
 ),
 
