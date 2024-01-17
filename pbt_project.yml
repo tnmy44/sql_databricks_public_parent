@@ -23,6 +23,23 @@ functions:
   airflowFunctions: {}
 subgraphs: {}
 sqlModels:
+  .prophecy/metadata/sqlmodels/all_type_partitioned:
+    name: all_type_partitioned
+    schema:
+      providerType: Databricks
+      fields:
+      - name: p_int
+        dataType:
+          type: Integer
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/all_type_partitioned.sql
+    - .prophecy/ide/models/all_type_partitioned.json
+    sqlDependencies:
+      models: []
+      datasets: []
+    createdAt: '2024-01-12 13:58:07'
   .prophecy/metadata/sqlmodels/env_uitesting_can_corrupt:
     name: env_uitesting_can_corrupt
     schema:
@@ -553,6 +570,118 @@ sqlSources:
       description: null
       author: abhisheks+e2etests@prophecy.io
       createdAt: '2023-04-15 08:50:11'
+  .prophecy/metadata/sqlsources/hive_metastore_qa_database:
+    name: hive_metastore.qa_database
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - prophecy-sources/sources.yml
+    createdAt: '2024-01-17 04:25:17'
+    tables:
+    - name: all_type_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+        - name: p_int
+          dataType:
+            type: Integer
+        - name: p_string
+          dataType:
+            type: String
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-01-17 04:25:17'
+    - name: all_type_non_partitioned
+      schema:
+        providerType: databricks
+        fields:
+        - name: c_tinyint
+          dataType:
+            type: TinyInt
+        - name: c_smallint
+          dataType:
+            type: SmallInt
+        - name: c_int
+          dataType:
+            type: Integer
+        - name: c_bigint
+          dataType:
+            type: Bigint
+        - name: c_float
+          dataType:
+            type: Float
+        - name: c_double
+          dataType:
+            type: Double
+        - name: c_string
+          dataType:
+            type: String
+        - name: c_boolean
+          dataType:
+            type: Boolean
+        - name: c_array
+          dataType:
+            type: Array
+            dataType:
+              type: String
+        - name: c_struct
+          dataType:
+            type: Struct
+            fields:
+            - name: city
+              dataType:
+                type: String
+            - name: state
+              dataType:
+                type: String
+            - name: pin
+              dataType:
+                type: Bigint
+      description: null
+      author: abhisheks+e2etests@prophecy.io
+      createdAt: '2024-01-17 04:25:17'
 sqlUnreferencedSources: {}
 sqlPipeline:
   name: sqlPipeline
