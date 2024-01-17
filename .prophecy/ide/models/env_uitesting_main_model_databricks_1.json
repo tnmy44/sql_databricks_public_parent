@@ -1334,7 +1334,7 @@
       "metadata" : {
         "label" : "all_type_partitioned_1",
         "x" : 420,
-        "y" : 120,
+        "y" : 80,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3565,7 +3565,7 @@
       "metadata" : {
         "label" : "all_type_non_partitioned_1",
         "x" : 680,
-        "y" : 20,
+        "y" : -40,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
