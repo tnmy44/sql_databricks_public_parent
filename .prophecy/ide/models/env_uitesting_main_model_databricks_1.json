@@ -3063,8 +3063,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_2",
-        "x" : 1540,
-        "y" : 420,
+        "x" : 1520,
+        "y" : 660,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
