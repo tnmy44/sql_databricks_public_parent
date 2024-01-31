@@ -2046,7 +2046,16 @@
         "y" : 420,
         "phase" : 0,
         "macroDependencies" : [ ],
-        "comment" : "asd\n  asdasddasd"
+        "comment" : "asd\n  asdasddasd",
+        "dataExplorerProps" : {
+          "filter" : [ {
+            "type" : "simple",
+            "lhs" : "c_int",
+            "operator" : ">=",
+            "rhs" : "12"
+          } ],
+          "sort" : [ ]
+        }
       },
       "properties" : {
         "conditions" : [ {
@@ -2129,7 +2138,7 @@
           "alias" : "c_id"
         } ],
         "activeTab" : "conditions",
-        "columnsSelector" : [ "BLrVS0dd##c_tinyint", "MsnrzH92##c_tinyint", "BLrVS0dd##c_smallint", "MsnrzH92##c_smallint", "MsnrzH92##c_int", "MsnrzH92##p_int", "MsnrzH92##p_string", "BLrVS0dd##c_string", "BLrVS0dd##c_int", "BLrVS0dd##c_bigint", "BLrVS0dd##c_smallint", "BLrVS0dd##c_tinyint", "BLrVS0dd##c_float", "BLrVS0dd##c_boolean", "BLrVS0dd##c_array", "BLrVS0dd##c_double", "BLrVS0dd##c_struct" ],
+        "columnsSelector" : [ "BLrVS0dd##c_tinyint", "MsnrzH92##c_tinyint", "BLrVS0dd##c_smallint", "MsnrzH92##c_smallint", "MsnrzH92##c_int", "aig1178u##c_id", "MsnrzH92##p_int", "MsnrzH92##p_string", "BLrVS0dd##c_string", "BLrVS0dd##c_int", "BLrVS0dd##c_bigint", "BLrVS0dd##c_smallint", "BLrVS0dd##c_tinyint", "BLrVS0dd##c_float", "BLrVS0dd##c_boolean", "BLrVS0dd##c_array", "BLrVS0dd##c_double", "BLrVS0dd##c_struct", "aig1178u##c_id" ],
         "headAlias" : "all_type_non_partitioned"
       },
       "ports" : {
@@ -3063,8 +3072,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_2",
-        "x" : 1520,
-        "y" : 660,
+        "x" : 1580,
+        "y" : 540,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
