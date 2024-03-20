@@ -223,8 +223,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_non_partitioned",
-        "x" : 420,
-        "y" : 320,
+        "x" : 400,
+        "y" : 340,
         "phase" : 0
       },
       "properties" : {
