@@ -92,6 +92,7 @@ sqlModels:
       snapshots: []
     createdAt: '2023-04-15 08:40:36'
 sqlSnapshots: {}
+sqlTests: {}
 sqlMacros:
   .prophecy/metadata/sqlmacros/default__language_specific_deduplicate:
     name: default__language_specific_deduplicate
