@@ -387,12 +387,12 @@
       "metadata" : {
         "label" : "Reformat_1",
         "x" : 1280,
-        "y" : 100,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "Tq9h6AtD##p_int", "Tq9h6AtD##p_string", "Tq9h6AtD##c_string", "Tq9h6AtD##c_int", "Tq9h6AtD##c_bigint", "Tq9h6AtD##c_smallint", "Tq9h6AtD##c_tinyint", "Tq9h6AtD##c_float", "Tq9h6AtD##c_boolean", "Tq9h6AtD##c_array", "Tq9h6AtD##c_double", "Tq9h6AtD##c_struct", "Tq9h6AtD##c_base_dependency_macro", "Tq9h6AtD##c_current_project_macro", "Tq9h6AtD##c_dbt_date", "Tq9h6AtD##c_struct.city" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "p_int"
@@ -2787,13 +2787,13 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_2_1",
-        "x" : 1080,
-        "y" : 100,
+        "x" : 1100,
+        "y" : 20,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
       "properties" : {
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "cqTTbMsG##p_int", "cqTTbMsG##p_string", "cqTTbMsG##c_string", "cqTTbMsG##c_int", "cqTTbMsG##c_bigint", "cqTTbMsG##c_smallint", "cqTTbMsG##c_tinyint", "cqTTbMsG##c_float", "cqTTbMsG##c_boolean", "cqTTbMsG##c_array", "cqTTbMsG##c_double", "cqTTbMsG##c_struct", "cqTTbMsG##c_base_dependency_macro", "cqTTbMsG##c_current_project_macro", "cqTTbMsG##c_dbt_date" ],
         "expressions" : [ {
           "expression" : {
             "expression" : "p_int"
