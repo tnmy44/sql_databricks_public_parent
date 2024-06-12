@@ -1623,8 +1623,8 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_partitioned",
-        "x" : 20,
-        "y" : 560,
+        "x" : -120,
+        "y" : 260,
         "phase" : 0
       },
       "properties" : {
