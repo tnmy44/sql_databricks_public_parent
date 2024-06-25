@@ -840,8 +840,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "all_type_non_partitioned_1",
-        "x" : 620,
-        "y" : 0,
+        "x" : 560,
+        "y" : -120,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
