@@ -840,7 +840,7 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "all_type_non_partitioned_1",
-        "x" : 560,
+        "x" : 500,
         "y" : -120,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -2970,7 +2970,7 @@
       "metadata" : {
         "label" : "Join_1_1",
         "x" : 880,
-        "y" : 100,
+        "y" : 40,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column", "SQL_DatabricksParentProjectMain.qa_boolean_macro" ]
       },
@@ -3059,7 +3059,7 @@
           "alias" : "c_dbt_date"
         } ],
         "activeTab" : "conditions",
-        "columnsSelector" : [ ],
+        "columnsSelector" : [ "OZU6Rz81##c_tinyint", "z3YuJvuv##c_tinyint", "OZU6Rz81##c_smallint", "z3YuJvuv##c_smallint", "z3YuJvuv##p_int", "z3YuJvuv##p_string", "OZU6Rz81##c_string", "OZU6Rz81##c_int", "OZU6Rz81##c_bigint", "OZU6Rz81##c_smallint", "OZU6Rz81##c_tinyint", "OZU6Rz81##c_float", "OZU6Rz81##c_boolean", "OZU6Rz81##c_array", "OZU6Rz81##c_double", "OZU6Rz81##c_struct" ],
         "headAlias" : "all_type_non_partitioned"
       },
       "ports" : {
