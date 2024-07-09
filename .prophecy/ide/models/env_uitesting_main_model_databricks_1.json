@@ -1623,7 +1623,7 @@
       "component" : "Source",
       "metadata" : {
         "label" : "all_type_partitioned",
-        "x" : -120,
+        "x" : -40,
         "y" : 260,
         "phase" : 0
       },
@@ -3589,8 +3589,8 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "my_table2_1",
-        "x" : 220,
-        "y" : 920,
+        "x" : 320,
+        "y" : 900,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
