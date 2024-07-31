@@ -15,6 +15,7 @@
     },
     "maxConcurrentRuns" : 1,
     "processDefaultSettings" : {
+      "retries" : 0,
       "ignore_first_depends_on_past" : true,
       "do_xcom_push" : true
     },
@@ -66,6 +67,7 @@
     } ],
     "maxActiveRuns" : 1,
     "catchup" : false,
+    "tags" : [ ],
     "scheduleTimeZone" : "UTC",
     "dagParams" : {
       "instances" : {
@@ -102,7 +104,9 @@
           "slug" : ""
         } ]
       },
-      "settings" : { },
+      "settings" : {
+        "retries" : 0
+      },
       "properties" : {
         "entityId" : "66/.prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_1",
         "cacheSelectedOnly" : null,
@@ -129,7 +133,7 @@
         "noPrint" : null,
         "quiet" : null,
         "projectId" : "66",
-        "runMode" : "model",
+        "runMode" : "project",
         "runOnlyModel" : false,
         "favorState" : null,
         "failFast" : null,

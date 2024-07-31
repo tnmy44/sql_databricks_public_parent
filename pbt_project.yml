@@ -51,9 +51,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-07-31 11:18:59'
     author: abhisheks+e2etests@prophecy.io
     models: []
@@ -75,9 +75,9 @@ jobs:
     pipelines: []
     jobClusterMode:
       clusterMode:
-        Single: {}
+        Multi: {}
       clusterId: null
-    enabled: null
+    enabled: false
     createdAt: '2024-07-31 12:09:21'
     author: abhisheks+e2etests@prophecy.io
     models: []

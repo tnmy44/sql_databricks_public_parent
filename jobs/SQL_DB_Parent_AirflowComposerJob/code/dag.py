@@ -13,9 +13,10 @@ PROPHECY_RELEASE_TAG = "__PROJECT_ID_PLACEHOLDER__/__PROJECT_RELEASE_VERSION_PLA
 with DAG(
     dag_id = "staging_abhisheks_e2etests_SQL_ParentDatabricks_SQL_DB_Parent_AirflowComposerJob", 
     schedule_interval = "0 0 1 1 *", 
-    default_args = {"owner" : "Prophecy", "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
+    default_args = {"owner" : "Prophecy", "retries" : 0, "ignore_first_depends_on_past" : True, "do_xcom_push" : True}, 
     start_date = pendulum.today('UTC'), 
     catchup = False, 
-    max_active_runs = 1
+    max_active_runs = 1, 
+    tags = []
 ) as dag:
     Model_0_op = Model_0()
