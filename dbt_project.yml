@@ -24,3 +24,14 @@ model-paths:
 macro-paths:
 - "macros"
 target-path: "target"
+
+# ==================
+# Variable Configs
+# ==================
+vars:
+  v_project_dict_parent: "{'a': 2, 'b': 'hello'}"
+
+# ============
+# Misc
+# ============
+dispatch: []

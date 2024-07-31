@@ -85,6 +85,7 @@ sqlModels:
     files:
     - models/main/databricks/main_mones/env_uitesting_main_model_databricks_1.sql
     - .prophecy/ide/models/env_uitesting_main_model_databricks_1.json
+    - models/main/databricks/main_mones/schema.yml
     sqlDependencies:
       models: []
       datasets: []
@@ -92,6 +93,83 @@ sqlModels:
       sources: []
       snapshots: []
     createdAt: '2023-04-15 08:40:36'
+  .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2:
+    name: env_uitesting_main_model_databricks_2
+    schema:
+      providerType: Databricks
+      fields:
+      - name: c_tinyint
+        dataType:
+          type: TinyInt
+      - name: c_smallint
+        dataType:
+          type: SmallInt
+      - name: c_int
+        dataType:
+          type: Integer
+      - name: c_bigint
+        dataType:
+          type: Bigint
+      - name: c_float
+        dataType:
+          type: Float
+      - name: c_double
+        dataType:
+          type: Float
+      - name: c_string
+        dataType:
+          type: String
+      - name: c_boolean
+        dataType:
+          type: Boolean
+      - name: c_array
+        dataType:
+          type: Array
+          dataType:
+            type: String
+      - name: c_struct
+        dataType:
+          type: Struct
+          fields:
+          - name: city
+            dataType:
+              type: String
+          - name: state
+            dataType:
+              type: String
+          - name: pin
+            dataType:
+              type: Bigint
+      - name: p_int
+        dataType:
+          type: Integer
+      - name: p_string
+        dataType:
+          type: String
+      - name: id
+        dataType:
+          type: Integer
+      - name: user_id
+        dataType:
+          type: Integer
+      - name: order_date
+        dataType:
+          type: Date
+      - name: status
+        dataType:
+          type: String
+    description: null
+    author: abhisheks+e2etests@prophecy.io
+    files:
+    - models/other_models/env_uitesting_main_model_databricks_2.sql
+    - .prophecy/ide/models/env_uitesting_main_model_databricks_2.json
+    sqlDependencies:
+      models: []
+      datasets: []
+      seeds: []
+      sources: []
+      snapshots: []
+    createdAt: '2024-07-31 10:30:37'
 sqlSnapshots: {}
 sqlTests: {}
 sqlMacros:
