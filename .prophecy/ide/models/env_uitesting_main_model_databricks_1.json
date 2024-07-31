@@ -2333,7 +2333,7 @@
           "alias" : "c_id"
         } ],
         "activeTab" : "conditions",
-        "columnsSelector" : [ "f2JPlGzH##c_tinyint", "f2JPlGzH##c_smallint", "hlRN0PMN##c_id", "f2JPlGzH##c_string", "f2JPlGzH##c_int", "f2JPlGzH##c_bigint", "f2JPlGzH##c_smallint", "f2JPlGzH##c_tinyint", "f2JPlGzH##c_float", "f2JPlGzH##c_boolean", "f2JPlGzH##c_array", "f2JPlGzH##c_double", "f2JPlGzH##c_struct", "hlRN0PMN##c_id" ],
+        "columnsSelector" : [ "f2JPlGzH##c_tinyint", "EeAeHpSM##c_tinyint", "f2JPlGzH##c_smallint", "EeAeHpSM##c_smallint", "EeAeHpSM##c_int", "hlRN0PMN##c_id", "EeAeHpSM##p_int", "EeAeHpSM##p_string", "f2JPlGzH##c_string", "f2JPlGzH##c_int", "f2JPlGzH##c_bigint", "f2JPlGzH##c_smallint", "f2JPlGzH##c_tinyint", "f2JPlGzH##c_float", "f2JPlGzH##c_boolean", "f2JPlGzH##c_array", "f2JPlGzH##c_double", "f2JPlGzH##c_struct", "hlRN0PMN##c_id" ],
         "headAlias" : "all_type_non_partitioned"
       },
       "ports" : {
