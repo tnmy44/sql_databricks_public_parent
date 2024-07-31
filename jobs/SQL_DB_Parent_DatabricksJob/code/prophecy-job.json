@@ -1,0 +1,157 @@
+{
+  "metainfo" : {
+    "type" : "Databricks",
+    "fabricId" : "7",
+    "jobId" : "jobs/SQL_DB_Parent_DatabricksJob",
+    "name" : "SQL_DB_Parent_DatabricksJob",
+    "schedule" : "0 0 0 1 1 ? *",
+    "scheduleTimeZone" : "UTC",
+    "jobClusterMode" : {
+      "clusterMode" : "Single"
+    },
+    "enabled" : false,
+    "defaultClusterSize" : "prophecy_internal_jobs",
+    "alerting" : {
+      "emails" : "",
+      "onStart" : false,
+      "onSuccess" : false,
+      "onFailure" : false
+    },
+    "maxConcurrentRuns" : 1,
+    "processDefaultSettings" : {
+      "type" : "Inherited",
+      "retries" : 0,
+      "alerting" : {
+        "emails" : "",
+        "onStart" : false,
+        "onSuccess" : false,
+        "onFailure" : false
+      }
+    },
+    "availableFabrics" : [ {
+      "id" : "3027",
+      "name" : "TEST-SQL-DB-Automation",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    }, {
+      "id" : "1880",
+      "name" : "sql_databricks",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    }, {
+      "id" : "2128",
+      "name" : "test_yuv_db",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    }, {
+      "id" : "7",
+      "name" : "dev_sql_databricks",
+      "clusterSizes" : {
+        "default" : "prophecy_internal_jobs",
+        "availableClusterSizes" : [ "prophecy_internal_jobs" ]
+      }
+    } ]
+  },
+  "processes" : {
+    "uAVNA9fv0qTboF28Qz0nU$$NPtur1O-ir49Ic-rvOLlA" : {
+      "id" : "uAVNA9fv0qTboF28Qz0nU$$NPtur1O-ir49Ic-rvOLlA",
+      "component" : "Model",
+      "metadata" : {
+        "label" : "Model_0",
+        "slug" : "Model_0",
+        "x" : 300,
+        "y" : 140
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "P-_dtxHNXlKbSOzJBzkkv$$1t4u2J-8-hb9p8FQQgeuL",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "kANQ4gvrtUsY53bHLHx-W$$2jCkSTkW9qDgzAoSj4QhM",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "execSeed" : true,
+        "execRun" : true,
+        "gitEntity" : "branch",
+        "projectId" : "66",
+        "runOnlyModel" : "false",
+        "loadingModels" : false,
+        "fullRefresh" : true,
+        "noSendAnonymousUsageStats" : true,
+        "profile" : "run_profile",
+        "sqlFabricId" : "7",
+        "gitEntityValue" : "dev_staging",
+        "execDeps" : true,
+        "execTest" : false,
+        "currentProjectModels" : [ {
+          "label" : "env_uitesting_main_model_databricks_2",
+          "value" : "env_uitesting_main_model_databricks_2",
+          "id" : "66/.prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2",
+          "name" : "env_uitesting_main_model_databricks_2"
+        }, {
+          "label" : "env_uitesting_main_model_databricks_1",
+          "value" : "env_uitesting_main_model_databricks_1",
+          "id" : "66/.prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_1",
+          "name" : "env_uitesting_main_model_databricks_1"
+        } ]
+      }
+    },
+    "6E6zUSrOwMKPls7kds21D$$AwjzAeTzNBJsdyentMTIX" : {
+      "id" : "6E6zUSrOwMKPls7kds21D$$AwjzAeTzNBJsdyentMTIX",
+      "component" : "Script",
+      "metadata" : {
+        "label" : "Script_1",
+        "slug" : "Script_1",
+        "x" : 500,
+        "y" : 160
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "j8PgmDZeZVgWJMroze1DA$$uMUvSexbcUdVs2EU4bocH",
+          "slug" : ""
+        } ],
+        "outputs" : [ {
+          "id" : "TQsL3elll3jdRk3GfWvRj$$WznbGtZEQpXsgq9MBVbpz",
+          "slug" : ""
+        } ]
+      },
+      "settings" : {
+        "type" : "Inherited",
+        "alerting" : {
+          "emails" : "",
+          "onStart" : false,
+          "onSuccess" : false,
+          "onFailure" : false
+        }
+      },
+      "properties" : {
+        "code" : "print(\"hello sir\")"
+      }
+    }
+  },
+  "connections" : [ {
+    "id" : "sMCXkLnBIzgeNU1OjAj7V$$yDD6P1P3d6jBCaJbXawrc",
+    "source" : "uAVNA9fv0qTboF28Qz0nU$$NPtur1O-ir49Ic-rvOLlA",
+    "target" : "6E6zUSrOwMKPls7kds21D$$AwjzAeTzNBJsdyentMTIX",
+    "sourcePort" : "kANQ4gvrtUsY53bHLHx-W$$2jCkSTkW9qDgzAoSj4QhM",
+    "targetPort" : "j8PgmDZeZVgWJMroze1DA$$uMUvSexbcUdVs2EU4bocH"
+  } ]
+}
