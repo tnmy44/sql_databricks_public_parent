@@ -159,7 +159,7 @@
         "dbtProfileSecret" : null,
         "target" : null,
         "exclude" : null,
-        "runDeps" : null,
+        "runDeps" : true,
         "loadingSnapshots" : false,
         "gitEntityValueBranch" : "dev_staging",
         "noAnonymousUsageStats" : null,
