@@ -346,7 +346,6 @@
         "customQuery" : false,
         "incrementalEditorDisabled" : true,
         "query" : "SELECT * \n\nFROM SQLStatement_2\n",
-        "isModel" : true,
         "incrementalKey" : false,
         "incremental" : {
           "expression" : "true"
@@ -4179,8 +4178,8 @@
       "component" : "Join",
       "metadata" : {
         "label" : "Join_1_1",
-        "x" : 880,
-        "y" : 40,
+        "x" : 920,
+        "y" : 80,
         "phase" : 0,
         "macroDependencies" : [ "SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column", "SQL_DatabricksParentProjectMain.qa_boolean_macro" ],
         "comment" : "Combines various data types from different tables to create a comprehensive view for analysis.",
@@ -5419,12 +5418,6 @@
     "target" : "SQLStatement_2##USku5MrB",
     "targetPort" : "Y838ZTpd"
   }, {
-    "id" : "b1fOsWUO",
-    "source" : "SQLStatement_2##USku5MrB",
-    "sourcePort" : "jz3oAcm0",
-    "target" : "env_uitesting_main_model_databricks_1##QsxEGUKB",
-    "targetPort" : "TnhE6vAF"
-  }, {
     "id" : "UGLOXLaUqz7vLMTUrv0_0",
     "source" : "all_type_partitioned##w46tICDz",
     "sourcePort" : "kOnBKMa2",
@@ -5490,6 +5483,12 @@
     "sourcePort" : "7BUZGIDbAQtDKddUGJ4bb$$-8rO-YVXL7y1ltoqdvRIU",
     "target" : "Join_1##QmsfJus7",
     "targetPort" : "EeAeHpSM"
+  }, {
+    "id" : "-SM6LCAiHbQYTIgLxf6SX",
+    "source" : "SQLStatement_2##USku5MrB",
+    "sourcePort" : "jz3oAcm0",
+    "target" : "env_uitesting_main_model_databricks_1##QsxEGUKB",
+    "targetPort" : "TnhE6vAF"
   } ],
   "component" : "Model"
 }
