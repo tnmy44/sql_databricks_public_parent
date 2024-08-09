@@ -107,7 +107,7 @@ sources:
   config:
     enabled: true
   tables: []
-- name: "hive_metastore.qa_database"
+- name: "alias_son_hive_metastore_qa_database"
   database: "hive_metastore"
   schema: "qa_database"
   config:
