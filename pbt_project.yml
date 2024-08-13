@@ -33,6 +33,7 @@ jobs:
     createdAt: '2024-07-31 11:16:26'
     author: abhisheks+e2etests@prophecy.io
     models: []
+    sqlProjects: []
   jobs/SQL_DB_Parent_AirflowComposerJob:
     name: SQL_DB_Parent_AirflowComposerJob
     description: ''
@@ -57,6 +58,7 @@ jobs:
     createdAt: '2024-07-31 11:18:59'
     author: abhisheks+e2etests@prophecy.io
     models: []
+    sqlProjects: []
   jobs/SQL_DB_Parent_AirflowMWAAJob:
     name: SQL_DB_Parent_AirflowMWAAJob
     description: ''
@@ -81,6 +83,7 @@ jobs:
     createdAt: '2024-07-31 12:09:21'
     author: abhisheks+e2etests@prophecy.io
     models: []
+    sqlProjects: []
 gemContainer:
   languageVersion: ''
   gemLibsVersion: ''
@@ -99,6 +102,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_1:
     name: env_uitesting_main_model_databricks_1
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: p_int
@@ -168,6 +172,7 @@ sqlModels:
   .prophecy/metadata/sqlmodels/env_uitesting_main_model_databricks_2:
     name: env_uitesting_main_model_databricks_2
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: c_tinyint
@@ -473,6 +478,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_orders:
     name: raw_orders
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -495,6 +501,7 @@ sqlSeeds:
   .prophecy/metadata/sqlseeds/raw_payments:
     name: raw_payments
     schema:
+      entityType: ''
       providerType: Databricks
       fields:
       - name: id
@@ -525,6 +532,7 @@ sqlSources:
     tables:
     - name: all_type_partitioned
       schema:
+        entityType: ''
         providerType: databricks
         fields:
         - name: c_tinyint
@@ -580,6 +588,7 @@ sqlSources:
       createdAt: '2024-08-09 05:22:03'
     - name: all_type_non_partitioned
       schema:
+        entityType: ''
         providerType: databricks
         fields:
         - name: c_tinyint
@@ -645,6 +654,7 @@ sqlSources:
     tables:
     - name: all_type_non_partitioned
       schema:
+        entityType: ''
         providerType: databricks
         fields:
         - name: c_tinyint
@@ -694,6 +704,7 @@ sqlSources:
       createdAt: '2023-04-15 08:50:11'
     - name: all_type_partitioned
       schema:
+        entityType: ''
         providerType: databricks
         fields:
         - name: c_tinyint

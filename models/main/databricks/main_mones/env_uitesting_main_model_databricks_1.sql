@@ -2,11 +2,129 @@
 {% set v_int = 22 %}
 
 
-WITH all_type_partitioned AS (
+WITH all_type_non_partitioned AS (
+
+  SELECT * 
+  
+  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_non_partitioned') }}
+
+),
+
+all_type_non_partitioned_1 AS (
+
+  SELECT * 
+  
+  FROM all_type_non_partitioned
+
+),
+
+env_uitesting_main_model_databricks_2 AS (
+
+  SELECT * 
+  
+  FROM {{ ref('env_uitesting_main_model_databricks_2')}}
+
+),
+
+Limit_2 AS (
+
+  SELECT * 
+  
+  FROM env_uitesting_main_model_databricks_2 AS in0
+  
+  LIMIT 10
+
+),
+
+all_type_partitioned AS (
 
   SELECT * 
   
   FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_partitioned') }}
+
+),
+
+all_type_partitioned_1 AS (
+
+  SELECT * 
+  
+  FROM all_type_partitioned
+
+),
+
+Join_1_1 AS (
+
+  {#Combines various data types from different tables to create a comprehensive view for analysis.#}
+  SELECT 
+    in2.p_int AS p_int,
+    all_type_partitioned.p_string AS p_string,
+    all_type_non_partitioned.c_string AS c_string,
+    all_type_non_partitioned.c_int AS c_int,
+    all_type_non_partitioned.c_bigint + spark_catalog.qa_db_warehouse.area(10, 20) AS c_bigint,
+    all_type_non_partitioned.c_smallint AS c_smallint,
+    all_type_non_partitioned.c_tinyint AS c_tinyint,
+    all_type_non_partitioned.c_float AS c_float,
+    all_type_non_partitioned.c_boolean AS c_boolean,
+    all_type_non_partitioned.c_array AS c_array,
+    all_type_non_partitioned.c_double AS c_double,
+    all_type_non_partitioned.c_struct AS c_struct,
+    {{ SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column('all_type_non_partitioned.c_string') }} AS c_base_dependency_macro,
+    {{ SQL_DatabricksParentProjectMain.qa_boolean_macro('all_type_non_partitioned.c_string') }} AS c_current_project_macro,
+    concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_date
+  
+  FROM all_type_non_partitioned_1 AS all_type_non_partitioned
+  INNER JOIN all_type_partitioned_1 AS all_type_partitioned
+     ON all_type_non_partitioned.c_tinyint = all_type_partitioned.c_tinyint
+    and all_type_non_partitioned.c_smallint = all_type_partitioned.c_smallint
+  INNER JOIN Limit_2 AS in2
+     ON all_type_partitioned.c_tinyint = in2.c_tinyint
+
+),
+
+Reformat_2_1 AS (
+
+  SELECT 
+    p_int AS p_int,
+    p_string AS p_string,
+    c_string AS c_string,
+    c_int AS c_int,
+    c_bigint AS c_bigint,
+    c_smallint AS c_smallint,
+    c_tinyint AS c_tinyint,
+    c_float AS c_float,
+    c_boolean AS c_boolean,
+    c_array AS c_array,
+    c_double AS c_double,
+    c_struct AS c_struct,
+    c_base_dependency_macro AS c_base_dependency_macro,
+    c_current_project_macro AS c_current_project_macro,
+    c_dbt_date AS c_dbt_date
+  
+  FROM Join_1_1 AS in0
+
+),
+
+Reformat_1 AS (
+
+  SELECT 
+    p_int AS p_int,
+    p_string AS p_string,
+    c_string AS c_string,
+    c_int AS c_int,
+    c_bigint AS c_bigint,
+    c_smallint AS c_smallint,
+    c_tinyint AS c_tinyint,
+    c_float AS c_float,
+    c_boolean AS c_boolean,
+    c_array AS c_array,
+    c_double AS c_double,
+    c_struct AS c_struct,
+    c_base_dependency_macro AS c_base_dependency_macro,
+    c_current_project_macro AS c_current_project_macro,
+    c_dbt_date AS c_dbt_date,
+    c_struct.city AS city
+  
+  FROM Reformat_2_1 AS in0
 
 ),
 
@@ -28,6 +146,20 @@ OrderBy_1 AS (
   FROM Filter_1 AS in0
   
   ORDER BY c_tinyint ASC NULLS FIRST, c_smallint DESC NULLS LAST, c_double ASC
+
+),
+
+SetOperation_1 AS (
+
+  SELECT * 
+  
+  FROM OrderBy_1 AS in0
+  
+  UNION
+  
+  SELECT * 
+  
+  FROM OrderBy_1 AS in1
 
 ),
 
@@ -353,7 +485,7 @@ AllStunningOne AS (
     {{ SQL_DatabricksParentProjectMain.qa_concat_macro_column('c_string') }} AS c_macro,
     {% if v_int > 20 %}
       concat(c_string, c_float) AS c_if,
-    {% elif  var('v_project_dict_parent') ['b'] == 'hello' %}
+    {% elif var('v_project_dict_parent') ['b'] == 'hello' %}
       concat(c_string, c_int) AS c_if,
     {% else %}
       concat(c_string, c_bigint) AS c_if,
@@ -371,19 +503,19 @@ AllStunningOne AS (
 
 ),
 
-raw_orders_seed AS (
-
-  SELECT * 
-  
-  FROM {{ ref('raw_orders')}}
-
-),
-
 my_table2 AS (
 
   SELECT * 
   
   FROM all_type_partitioned
+
+),
+
+raw_orders_seed AS (
+
+  SELECT * 
+  
+  FROM {{ ref('raw_orders')}}
 
 ),
 
@@ -429,28 +561,6 @@ Limit_1 AS (
   FROM final_table AS in0
   
   LIMIT 10
-
-),
-
-SetOperation_1 AS (
-
-  SELECT * 
-  
-  FROM OrderBy_1 AS in0
-  
-  UNION
-  
-  SELECT * 
-  
-  FROM OrderBy_1 AS in1
-
-),
-
-all_type_non_partitioned AS (
-
-  SELECT * 
-  
-  FROM {{ source('alias_spark_catalog_qa_db_warehouse', 'all_type_non_partitioned') }}
 
 ),
 
@@ -502,116 +612,6 @@ qa_all_not_null_1 AS (
 
   {#Ensures data integrity by checking for non-null values in a specific column of a dataset.#}
   {{ SQL_DatabricksParentProjectMain.qa_all_not_null(model = 'Reformat_4', column_name = 'p_string') }}
-
-),
-
-env_uitesting_main_model_databricks_2 AS (
-
-  SELECT * 
-  
-  FROM {{ ref('env_uitesting_main_model_databricks_2')}}
-
-),
-
-Limit_2 AS (
-
-  SELECT * 
-  
-  FROM env_uitesting_main_model_databricks_2 AS in0
-  
-  LIMIT 10
-
-),
-
-all_type_non_partitioned_1 AS (
-
-  SELECT * 
-  
-  FROM all_type_non_partitioned
-
-),
-
-all_type_partitioned_1 AS (
-
-  SELECT * 
-  
-  FROM all_type_partitioned
-
-),
-
-Join_1_1 AS (
-
-  {#Combines various data types from different tables to create a comprehensive view for analysis.#}
-  SELECT 
-    in2.p_int AS p_int,
-    all_type_partitioned.p_string AS p_string,
-    all_type_non_partitioned.c_string AS c_string,
-    all_type_non_partitioned.c_int AS c_int,
-    all_type_non_partitioned.c_bigint + spark_catalog.qa_db_warehouse.area(10, 20) AS c_bigint,
-    all_type_non_partitioned.c_smallint AS c_smallint,
-    all_type_non_partitioned.c_tinyint AS c_tinyint,
-    all_type_non_partitioned.c_float AS c_float,
-    all_type_non_partitioned.c_boolean AS c_boolean,
-    all_type_non_partitioned.c_array AS c_array,
-    all_type_non_partitioned.c_double AS c_double,
-    all_type_non_partitioned.c_struct AS c_struct,
-    {{ SQL_BaseGitDepProjectAllFinal.qa_concat_macro_base_column('all_type_non_partitioned.c_string') }} AS c_base_dependency_macro,
-    {{ SQL_DatabricksParentProjectMain.qa_boolean_macro('all_type_non_partitioned.c_string') }} AS c_current_project_macro,
-    concat('{{ dbt_utils.pretty_time() }}', '{{ dbt_utils.pretty_log_format("my pretty message") }}') AS c_dbt_date
-  
-  FROM all_type_non_partitioned_1 AS all_type_non_partitioned
-  INNER JOIN all_type_partitioned_1 AS all_type_partitioned
-     ON all_type_non_partitioned.c_tinyint = all_type_partitioned.c_tinyint
-    and all_type_non_partitioned.c_smallint = all_type_partitioned.c_smallint
-  INNER JOIN Limit_2 AS in2
-     ON all_type_partitioned.c_tinyint = in2.c_tinyint
-
-),
-
-Reformat_2_1 AS (
-
-  SELECT 
-    p_int AS p_int,
-    p_string AS p_string,
-    c_string AS c_string,
-    c_int AS c_int,
-    c_bigint AS c_bigint,
-    c_smallint AS c_smallint,
-    c_tinyint AS c_tinyint,
-    c_float AS c_float,
-    c_boolean AS c_boolean,
-    c_array AS c_array,
-    c_double AS c_double,
-    c_struct AS c_struct,
-    c_base_dependency_macro AS c_base_dependency_macro,
-    c_current_project_macro AS c_current_project_macro,
-    c_dbt_date AS c_dbt_date
-  
-  FROM Join_1_1 AS in0
-
-),
-
-Reformat_1 AS (
-
-  SELECT 
-    p_int AS p_int,
-    p_string AS p_string,
-    c_string AS c_string,
-    c_int AS c_int,
-    c_bigint AS c_bigint,
-    c_smallint AS c_smallint,
-    c_tinyint AS c_tinyint,
-    c_float AS c_float,
-    c_boolean AS c_boolean,
-    c_array AS c_array,
-    c_double AS c_double,
-    c_struct AS c_struct,
-    c_base_dependency_macro AS c_base_dependency_macro,
-    c_current_project_macro AS c_current_project_macro,
-    c_dbt_date AS c_dbt_date,
-    c_struct.city AS city
-  
-  FROM Reformat_2_1 AS in0
 
 ),
 
