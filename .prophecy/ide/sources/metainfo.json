@@ -13629,6 +13629,10 @@
     "prophecyProjectDependencies" : { }
   },
   "entitiesToSync" : [ {
+    "name" : "env_uitesting_main_model_databricks_1",
+    "type" : "Model",
+    "syncedOnce" : true
+  }, {
     "name" : "env_uitesting_main_model_databricks_2",
     "type" : "Model",
     "syncedOnce" : false

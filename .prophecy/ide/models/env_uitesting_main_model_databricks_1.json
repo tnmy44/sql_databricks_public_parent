@@ -67,7 +67,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -159,7 +159,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -267,7 +267,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -385,7 +385,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -478,7 +478,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -2905,7 +2905,7 @@
         "label" : "Subgraph_2",
         "slug" : "Subgraph_2",
         "x" : 1340,
-        "y" : 100,
+        "y" : 60,
         "phase" : 0,
         "macroDependencies" : [ ]
       },
@@ -3131,7 +3131,7 @@
                 }, {
                   "name" : "c_bigint",
                   "dataType" : {
-                    "type" : "Double"
+                    "type" : "Float"
                   }
                 }, {
                   "name" : "c_smallint",
@@ -3333,7 +3333,7 @@
                 }, {
                   "name" : "c_bigint",
                   "dataType" : {
-                    "type" : "Double"
+                    "type" : "Float"
                   }
                 }, {
                   "name" : "c_smallint",
@@ -3436,7 +3436,7 @@
                 }, {
                   "name" : "c_bigint",
                   "dataType" : {
-                    "type" : "Double"
+                    "type" : "Float"
                   }
                 }, {
                   "name" : "c_smallint",
@@ -4345,7 +4345,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -4635,7 +4635,7 @@
       "metadata" : {
         "label" : "Join_1",
         "x" : 940,
-        "y" : 440,
+        "y" : 480,
         "phase" : 0,
         "macroDependencies" : [ ],
         "comment" : "asd\n  asdasddasd"
@@ -5174,7 +5174,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -5267,7 +5267,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -5751,7 +5751,7 @@
       "component" : "Reformat",
       "metadata" : {
         "label" : "Reformat_3",
-        "x" : 1080,
+        "x" : 1120,
         "y" : 420,
         "phase" : 0,
         "macroDependencies" : [ ]
@@ -5882,7 +5882,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -6004,7 +6004,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",
@@ -6097,7 +6097,7 @@
             }, {
               "name" : "c_bigint",
               "dataType" : {
-                "type" : "Double"
+                "type" : "Float"
               }
             }, {
               "name" : "c_smallint",

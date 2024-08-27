@@ -119,7 +119,7 @@ sqlModels:
           type: Integer
       - name: c_bigint
         dataType:
-          type: Double
+          type: Float
       - name: c_smallint
         dataType:
           type: SmallInt
